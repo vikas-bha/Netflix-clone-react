@@ -1,0 +1,41 @@
+.row {
+    color: #fff;
+    margin-left: 20px;
+  }
+
+.row__posters{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+    
+}
+/*this wil help us to hide the scroll bar*/
+.row__posters::-webkit-scrollbar {
+    display: none;
+  }
+
+.row__poster{ /*will help to be inside the sscreen*/
+    /*will help to maintain the aspect ratio*/
+    object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 450ms;
+    
+    
+}
+.row__poster:hover{
+    transform: scale(1.1);
+
+}
+
+.row_posterLarge {
+    max-height: 250px;
+  }
+  
+  .row_posterLarge:hover {
+    transform: scale(1.11);
+  }
